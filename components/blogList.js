@@ -2,7 +2,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import {
   ArrowSquareOut,
-} from "phosphor-react";
+} from "@phosphor-icons/react";
 
 export default function BlogList({ data, activeSlug }) {
   return (

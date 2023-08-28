@@ -15,8 +15,9 @@ import {
   InstagramLogo,
   GithubLogo,
   Coffee,
+  SpeakerHifi,
   List
-} from "phosphor-react";
+} from "@phosphor-icons/react";
 import clsx from "clsx";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
@@ -32,6 +33,12 @@ export default function Sidebar() {
       url: "/",
       icon: <House size={16} />,
       active: pathname === "/",
+    },
+    {
+      title: "Audio Studio",
+      url: "/audio",
+      icon: <SpeakerHifi size={16} />,
+      active: pathname.includes("/blog"),
     },
     {
       title: "Blog",
