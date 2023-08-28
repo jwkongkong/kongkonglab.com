@@ -4,6 +4,8 @@ import matter from "gray-matter";
 
 const postsDirectory = join(process.cwd(), "data/blog");
 
+export const config = { runtime: 'edge' };
+
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory);
 }
