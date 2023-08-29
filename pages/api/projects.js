@@ -2,8 +2,6 @@ import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
 
-export const config = { runtime: 'edge' };
-
 const postsDirectory = join(process.cwd(), "data/projects");
 
 export function getPostSlugs() {
